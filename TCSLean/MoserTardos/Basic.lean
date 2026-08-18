@@ -2386,7 +2386,7 @@ algorithm up to `N` steps, for any `N` above the LLL sum `∑ i, x i / (1 - x i)
 stop strictly before `N` (the tail bound `moserTardos_tail` forces the stopping time
 `R` to be below `N` on a set of positive measure), and the assignment at the stopping
 time violates no bad event. This is the constructive companion of
-`LovaszLocal.lovaszLocalLemma_exists`. -/
+`TCSLean.Lovasz.lovaszLocalLemma_exists`. -/
 private lemma moserTardos_exists_pick (Ω : κ → Type v) [∀ j, MeasurableSpace (Ω j)]
     (μ : ∀ j, Measure (Ω j)) [∀ j, IsProbabilityMeasure (μ j)]
     (vbl : ι → Finset κ) (A : ι → Set (Π j, Ω j)) (hA : ∀ i, MeasurableSet (A i))
@@ -2453,7 +2453,7 @@ up to `N` steps, for any `N` above the LLL sum `∑ i, x i / (1 - x i)`, must st
 strictly before `N` (the tail bound `moserTardos_tail` forces the stopping time `R` to
 be below `N` on a set of positive measure), and the assignment at the stopping time
 violates no bad event. This is the constructive companion of
-`LovaszLocal.lovaszLocalLemma_exists`.
+`TCSLean.Lovasz.lovaszLocalLemma_exists`.
 
 No `[Inhabited ι]` is required: the nonempty case calls the inhabitant-carrying
 `moserTardos_exists_inhabited` after `Classical.inhabited_of_nonempty`, and at empty `ι`
