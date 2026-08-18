@@ -8,7 +8,7 @@ built on [mathlib](https://github.com/leanprover-community/mathlib4) (pinned to 
 | # | Formalization | Modules | References | Status |
 |---|---|---|---|---|
 | 1 | Talagrand's convex-distance concentration inequality | [`TCSLean.Talagrand`](TCSLean/Talagrand) | [Wikipedia](https://en.wikipedia.org/wiki/Talagrand%27s_concentration_inequality) · Talagrand 1995 (IHÉS) · [Pollard, arXiv:math/0611770](https://arxiv.org/abs/math/0611770) · [Tao's notes](https://terrytao.wordpress.com/2009/06/09/talagrands-concentration-inequality/) | ✅ complete (2026-08-14) |
-| 2 | Lovász local lemma | [`TCSLean.LovaszLocal`](TCSLean/LovaszLocal) | [Wikipedia](https://en.wikipedia.org/wiki/Lov%C3%A1sz_local_lemma) · Erdős–Lovász 1975 · Alon–Spencer ch. 5 | ✅ complete (2026-08-16) |
+| 2 | Lovász local lemma | [`TCSLean.LovaszLocal`](TCSLean/LovaszLocal) | [Wikipedia](https://en.wikipedia.org/wiki/Lov%C3%A1sz_local_lemma) · Erdős–Lovász 1975 · Alon–Spencer ch. 5 · [Moser & Tardos, arXiv:0903.0544](https://arxiv.org/abs/0903.0544) · [Edmonds & Paulson, CPP 2024, arXiv:2310.00513](https://arxiv.org/abs/2310.00513) | ✅ complete (2026-08-16) |
 | 3 | Moser–Tardos algorithmic Lovász local lemma | [`TCSLean.MoserTardos`](TCSLean/MoserTardos) | [Wikipedia](https://en.wikipedia.org/wiki/Algorithmic_Lov%C3%A1sz_local_lemma) · [Moser & Tardos, arXiv:0903.0544](https://arxiv.org/abs/0903.0544) | ✅ complete (2026-08-18) |
 
 Each section below follows a fixed template — **Modules / Main theorems / Development
