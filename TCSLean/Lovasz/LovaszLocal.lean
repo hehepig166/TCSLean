@@ -61,7 +61,7 @@ see [erdosLovasz1975] for the original result.
 open MeasureTheory ProbabilityTheory
 open scoped BigOperators ENNReal
 
-namespace TCSLean.LovaszLocal
+namespace TCSLean.Lovasz
 
 variable {Ω ι : Type*} [MeasurableSpace Ω] {μ : Measure Ω} [IsProbabilityMeasure μ]
   [Fintype ι] [DecidableEq ι]
@@ -783,4 +783,4 @@ theorem lovaszLocalLemma_cond (A : ι → Set Ω) (hA : ∀ i, MeasurableSet (A 
         rw [mul_comm (ENNReal.ofReal (x i)) (μ (bset A S)), ← mul_assoc,
           ENNReal.inv_mul_cancel (ne_of_gt hμS₀) (measure_ne_top μ (bset A S)), one_mul]
 
-end TCSLean.LovaszLocal
+end TCSLean.Lovasz
