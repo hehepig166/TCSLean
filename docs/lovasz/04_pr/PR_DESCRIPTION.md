@@ -3,8 +3,8 @@
 - **Target:** `hehepig166/TCSLean`, branch `zzk/lovasz-local-lemma` → `main`
 - **Proposal:** [`docs/lovasz/01_proposal/proposal.md`](../01_proposal/proposal.md)
 - **Blueprint:** [`docs/lovasz/02_blueprint/BLUEPRINT.md`](../02_blueprint/BLUEPRINT.md)
-- **File:** `TCSLean/LovaszLocal/LovaszLocal.lean` (new, module `TCSLean.LovaszLocal.LovaszLocal`,
-  namespace `TCSLean.LovaszLocal`)
+- **File:** `TCSLean/Lovasz/LovaszLocal.lean` (new, module `TCSLean.Lovasz.LovaszLocal`,
+  namespace `TCSLean.Lovasz`)
 
 ## Summary
 
@@ -15,7 +15,7 @@ relative to its neighborhood. Both the **asymmetric form** (per-event weights `x
 the **symmetric forms** (`e·p·(d+1) ≤ 1`, the sharp `(d+1)^(d+1)·p ≤ d^d`, and `4·p·d ≤ 1`) are
 covered, together with the existence-witness, ℝ-valued, and conditional-probability corollaries.
 
-## Main declarations (all in `namespace TCSLean.LovaszLocal`)
+## Main declarations (all in `namespace TCSLean.Lovasz`)
 
 - `bset`, `IsDependencyGraph`, `IsDependencyGraphStrong` (+ the bridge theorems
   `IsDependencyGraph.of_strong` / `IsDependencyGraph.strong` / `isDependencyGraph_iff_strong`) —
@@ -57,7 +57,7 @@ Faithful transfer of the formalization developed in `StatsMLlib` (branch
 `zzk/lovasz-local-lemma-gptv2`, commit `c6e4461`), with:
 
 - module path `StatsMLlib/Probability/LovaszLocal.lean`
-  → `TCSLean/LovaszLocal/LovaszLocal.lean`, namespace wrapped as `TCSLean.LovaszLocal`;
+  → `TCSLean/Lovasz/LovaszLocal.lean`, namespace wrapped as `TCSLean.Lovasz`;
 - no proof changes (the source already builds on mathlib v4.32.0, which TCSLean is pinned to
   since the Talagrand PR).
 
