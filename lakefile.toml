@@ -5,14 +5,32 @@ defaultTargets = ["TCSLean"]
 
 [leanOptions]
 pp.unicode.fun = true # pretty-prints `fun a ↦ b`
-relaxedAutoImplicit = false
-weak.linter.mathlibStandardSet = true
-maxSynthPendingDepth = 3
+autoImplicit = false
+weak.linter.hashCommand = true
+weak.linter.missingEnd = true
+weak.linter.cdot = true
+weak.linter.dollarSyntax = true
+weak.linter.style.lambdaSyntax = true
+weak.linter.longLine = true
+weak.linter.oldObtain = true
+weak.linter.refine = true
+weak.linter.setOption = true
+
+[moreServerOptions]
+linter.hashCommand = true
+linter.missingEnd = true
+linter.cdot = true
+linter.dollarSyntax = true
+linter.style.lambdaSyntax = true
+linter.longLine = true
+linter.oldObtain = true
+linter.refine = true
+linter.setOption = true
 
 [[require]]
 name = "mathlib"
 scope = "leanprover-community"
-rev = "v4.33.0"
+rev = "v4.32.0"
 
 [[lean_lib]]
 name = "TCSLean"
